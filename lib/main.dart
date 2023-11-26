@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class _WeatherState extends State<Weather> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Icon(
               Icons.location_pin,
               size: 30,
@@ -41,7 +42,8 @@ class _WeatherState extends State<Weather> {
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            Lottie.asset("assets/images/sunny.json"),
           ],
         ),
       ),
